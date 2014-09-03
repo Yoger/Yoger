@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Spinner
+            android:id="@+id/Home_search_type"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText1" />
+           <LinearLayout android:layout_width="0px"
+		    android:layout_height="0px" android:focusable="true"
+		    android:focusableInTouchMode="true"></LinearLayout>
+
+	       <AutoCompleteTextView
+	           android:id="@+id/autoCompleteTextView1"
+	           android:layout_width="match_parent"
+	           android:layout_height="wrap_content"
+	           android:layout_toLeftOf="@+id/imageView1"
+	           android:layout_toRightOf="@+id/Home_search_type"
+	           android:hint="请输入文字进行搜索" >
+
+	        </AutoCompleteTextView>
+
+	       <ImageView
+	           android:id="@+id/imageView1"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:layout_alignParentRight="true"
+	           android:layout_alignParentTop="true"
+	           android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/button1"
+                android:text="Button2" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="83dp"
+                android:text="Button1" />
+
+        </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/homemessage"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="true"
+        android:measureAllChildren="true" >
+
+     </ScrollView>
+
+</LinearLayout>

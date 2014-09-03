@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Community</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_page">MainPageAct</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_make_money">MakeMoneyAct</string>
+    <string name="title_activity_classify">ClassifyAct</string>
+    <string name="title_activity_information_detail">InformationDetailAct</string>
+    <string name="title_activity_home_page">HomePageAct</string>
+    <string name="title_activity_recommend">RecommendAct</string>
+    <string name="title_activity_movement">MovementAct</string>
+    <string name="title_activity_change_psw">ChangePswAct</string>
+    <string name="title_activity_search_page">SearchPageAct</string>
+    <string name="title_activity_register">RegisterAct</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="register_account">账户</string>
+    <string name="register_password">密码</string>
+    <string name="register_userName">用户名</string>
+    <string name="register_button_commit">确认</string>
+    <string name="register_title">注册信息</string>
+    <string name="title_activity_goods_detail">GoodsDetailAct</string>
+    <string name="sales_display_goodsName">商品名称</string>
+    <string name="sales_display_goodsPrice">商品价格</string>
+    <string name="sales_display_price">￥0.00</string>
+    <string name="sales_display_like">点赞</string>
+    <string name="sales_display_likecount">已有0人点赞</string>
+    <string name="sales_display_seller">卖家</string>
+    <string name="sales_display_count">商品数量</string>
+    <string name="sales_display_detail">商品详情</string>
+    <string name="sales_display_style">商品类别</string>
+    <string name="sales_display_demodetail">9成新的自行车，买了不到一个月，因为急用钱，挥泪大甩卖了，上面三个局部图显示的很清楚自行车的局部状态！</string>
+    <string name="sales_display_contact">联系方式</string>
+    <string name="sales_display_button_contact">点我查看</string>
+    <string name="sales_display_message">留言板</string>
+    <string name="sales_display_button_message">留言</string>
+    <string name="sales_display_button_collect">收藏</string>
+    <string name="sales_display_button_share">分享</string>
+    <string name="sales_temp">无</string>
+    <string name="title_activity_release_goods">ReleaseGoodsAct</string>
+    <string name="releaseTitle">商品信息</string>
+    <string name="sales_release_key">商品关键字</string>
+    <string name="sales_release_button_goodsPhoto">上传封面图</string>
+    <string name="sales_release_button_goodsDetailPhoto">上传描述图</string>
+    <string name="title_activity_display_info">DisplayInfoActivity</string>
+    <string name="title_activity_focus">FocusActivity</string>
+    <string name="title_activity_info_detail">InfoDetailActivity</string>
+    <string name="title_activity_modify_info">ModifyInfoActivity</string>
+    <string name="float_button_sell">发布商品</string>
+    <string name="float_button_seek">发布求购</string>
+    <string name="float_close">关闭</string>
+    <string name="school_title_name">学院通知</string>
+    <string name="back">返回</string>
+    <string name="send">发送</string>
+    <string name="title_activity_news_count">NewsCountAct</string>
+
+</resources>
