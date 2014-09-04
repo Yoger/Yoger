@@ -4,32 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f0f0f0"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
-    <RelativeLayout 
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:gravity="center_vertical"
-        android:background="@drawable/title_bg" >
+        android:background="@drawable/title_bg2"
+        android:gravity="center_vertical" >
 
         <TextView
+            style="@style/my_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="@string/app_name"/>
-
+            android:text="@string/app_name" />
     </RelativeLayout>
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="20dp"
-        >
-        <TextView
+        android:layout_marginTop="150dp"
+        android:padding="5dp" >
+
+        <!--
+            <TextView
             android:id="@+id/lblUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,51 +38,55 @@
             android:textSize="15sp"
             android:textColor="#000"
             android:text="用户名：" />
+        -->
 
         <EditText
             android:id="@+id/txtUser"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="28dp"
-            android:layout_toRightOf="@id/lblUser"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/login_text_shape"
-            android:hint="login_lable_name_hint" 
-            android:text="guanyu">
-        	<requestFocus />
+            android:hint="login_lable_name_hint"
+            android:paddingLeft="28dp"
+            android:text="guanyu" >
+
+            <!-- android:layout_toRightOf="@id/lblUser" -->
+
+            <requestFocus />
         </EditText>
-        
-        <ImageView 
+
+        <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:contentDescription="@null"
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/usr_1"
             android:layout_alignLeft="@id/txtUser"
-            android:layout_centerVertical="true"/>
-        
-                <ImageView 
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/usr_1" />
+
+        <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_alignRight="@id/txtUser"
+            android:layout_centerVertical="true"
             android:layout_marginRight="5dp"
             android:contentDescription="@null"
-            android:src="@drawable/usr_2"
-            android:layout_alignRight="@id/txtUser"
-            android:layout_centerVertical="true"/>
+            android:src="@drawable/usr_2" />
     </RelativeLayout>
-    
-       <RelativeLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:paddingTop="10dp"
-		android:paddingBottom="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="20dp"
-        >
-        <TextView
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+
+        <!--
+            <TextView
             android:id="@+id/lblPwd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,31 +94,33 @@
             android:textSize="15sp"
             android:textColor="#000"
             android:text="密    码：" />
+        -->
 
         <EditText
             android:id="@+id/txtPwd"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="28dp"
-            android:layout_toRightOf="@id/lblPwd"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/login_text_shape"
             android:hint="login_lable_pwd_hint"
-            android:inputType="textPassword" 
-            android:text="guanyu"/>
-        
-        <ImageView 
+            android:inputType="textPassword"
+            android:paddingLeft="28dp"
+            android:text="guanyu" />
+        <!-- android:layout_toRightOf="@id/lblPwd" -->
+
+        <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:contentDescription="@null"
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/pwd_1"
             android:layout_alignLeft="@id/txtPwd"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/pwd_1" />
     </RelativeLayout>
 
-       <RelativeLayout
+    <!--
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -153,32 +160,34 @@
             android:layout_marginTop="5dp"/>
              
     </RelativeLayout>
+    -->
 
-           <RelativeLayout
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:layout_marginLeft="10dp"
-               android:layout_marginRight="20dp"
-               android:layout_marginTop="10dp"
-               android:gravity="center"
-               android:padding="5dp" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:padding="5dp" >
 
-               <Button
-                   android:id="@+id/btnLogin"
-                   android:layout_width="80dp"
-                   android:layout_height="wrap_content"
-                   android:layout_marginLeft="10dp"
-                   android:text="登陆"
-                   android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="登陆"
+            android:textColor="#FFFFFF" />
 
-               <Button
-                   android:id="@+id/btnRegister"
-                   android:layout_width="80dp"
-                   android:layout_height="wrap_content"
-                   android:layout_marginLeft="20dp"
-                   android:layout_toRightOf="@id/btnLogin"
-                   android:text="注册"
-                   android:textColor="#FFFFFF" />
-           </RelativeLayout>
-    
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/btnLogin"
+            android:text="注册"
+            android:textColor="#FFFFFF" />
+    </RelativeLayout>
+
+
 </LinearLayout>
