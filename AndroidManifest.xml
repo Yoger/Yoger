@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.community"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.community.LoginAct"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.community.MainPageAct"
+            android:label="@string/title_activity_main_page" >
+        </activity>
+        <activity
+            android:name="com.example.community.MakeMoneyAct"
+            android:label="@string/title_activity_make_money" >
+        </activity>
+        <activity
+            android:name="com.example.community.ClassifyAct"
+            android:label="@string/title_activity_classify" >
+        </activity>
+        <activity
+            android:name="com.example.community.InformationDetailAct"
+            android:label="@string/title_activity_information_detail" >
+        </activity>
+        <activity
+            android:name="com.example.community.HomePageAct"
+            android:label="@string/title_activity_home_page" >
+        </activity>
+        <activity
+            android:name="com.example.community.RecommendAct"
+            android:label="@string/title_activity_recommend" >
+        </activity>
+        <activity
+            android:name="com.example.community.MovementAct"
+            android:label="@string/title_activity_movement" >
+        </activity>
+        <activity
+            android:name="com.example.community.ChangePswAct"
+            android:label="@string/title_activity_change_psw" >
+        </activity>
+        <activity
+            android:name="com.example.community.SearchPageAct"
+            android:label="@string/title_activity_search_page" >
+        </activity>
+        <activity
+            android:name="com.example.community.RegisterAct"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.community.ReleaseGoodsAct"
+            android:label="@string/title_activity_release_goods" >
+        </activity>
+        <activity
+            android:name="com.example.community.GoodsDetailAct"
+            android:label="@string/title_activity_goods_detail" >
+        </activity>
+        <activity
+            android:name="com.example.community.DisplayInfoActivity"
+            android:label="@string/title_activity_display_info" >
+        </activity>
+        <activity
+            android:name="com.example.community.FocusActivity"
+            android:label="@string/title_activity_focus" >
+        </activity>
+        <activity
+            android:name="com.example.community.InfoDetailActivity"
+            android:label="@string/title_activity_info_detail" >
+        </activity>
+        <activity
+            android:name="com.example.community.ModifyInfoActivity"
+            android:label="@string/title_activity_modify_info" >
+        </activity>
+
+        <service android:name="com.example.community.FxService" >
+        </service>
+
+        <activity
+            android:name="com.example.community.NewsCountAct"
+            android:label="@string/title_activity_news_count" >
+        </activity>
+        <activity
+            android:name="com.example.community.ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.example.community.ChooseClassifyAct"
+            android:label="@string/title_activity_choose_classify" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+</manifest>
