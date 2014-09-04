@@ -20,40 +20,27 @@
         android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:layout_gravity="bottom"
-        android:background="#444444"
         android:orientation="horizontal" >
+        
         <ImageView
             android:id="@+id/bre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/bre" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:src="@drawable/home_not_selected" />
 
         <ImageView
-        	android:id="@+id/lunch"
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentTop="true"
-        	android:layout_toRightOf="@+id/bre"
-        	android:src="@drawable/lunch" />
-
-
-
-        <ImageView
-            android:id="@+id/sweet"
+            android:id="@+id/lunch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
-            android:src="@drawable/sweet" />
-
-        <ImageView
-            android:id="@+id/dinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/sweet"
-            android:src="@drawable/dinner" />
-
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/bre"
+            android:src="@drawable/make_money" />
+        
         <ImageView
             android:id="@+id/mainpage_image_add"
             android:layout_width="wrap_content"
@@ -61,6 +48,28 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:src="@drawable/add" />
+
+
+
+        <ImageView
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/sweet"
+            android:src="@drawable/classify_not_selected" />
+
+        <ImageView
+            android:id="@+id/sweet"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/mypage_not_selected" />
+
+
 
     </RelativeLayout>
 	
