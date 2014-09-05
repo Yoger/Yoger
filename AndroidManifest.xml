@@ -95,9 +95,14 @@
             android:name=".NewsCountAct"
             android:label="@string/title_activity_news_count" >
         </activity>
-        <activity 
+        <activity
             android:name=".ChatActivity"
-            android:label="@string/title_activity_chat"></activity>
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name=".ReleaseSeekAct"
+            android:label="@string/title_activity_release_seek" >
+        </activity>
     </application>
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />

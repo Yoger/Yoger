@@ -54,5 +54,11 @@
     <string name="back">返回</string>
     <string name="send">发送</string>
     <string name="title_activity_news_count">NewsCountAct</string>
+    <string name="title_activity_release_seek">ReleaseSeekAct</string>
+    <string name="seekTitle">求购详情</string>
+    <string name="seeks_display_seekName">求购标题</string>
+    <string name="seek_display_style">求购类别</string>
+    <string name="seek_display_count">求购数量</string>
+    <string name="seek_display_detail">求购描述</string>
 
 </resources>
