@@ -1,5 +1,4 @@
 package com.example.community;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -215,12 +214,13 @@ public class ClassifyAct extends Activity {
 		
 		
 		
-   /////gridview
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_classify);
+
 		set_searchType();
 		mListData = getListData();
 		MyListAdapter adapter = new MyListAdapter(this);
@@ -228,6 +228,7 @@ public class ClassifyAct extends Activity {
 		ls.setAdapter(adapter);
 		setGridView1();
 		setGridView2();
+
 	}
 
 }

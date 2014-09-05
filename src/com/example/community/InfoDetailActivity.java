@@ -82,41 +82,44 @@ public class InfoDetailActivity extends Activity {
 				}
 			});
 	        
-	      //锟斤拷XML锟叫碉拷ListView锟斤拷锟斤拷为Item锟斤拷锟斤拷锟斤拷  
+
 	        ListView dingDanManage = (ListView) findViewById(R.id.dingDanManage);  
 	        ListView qiuGouManage = (ListView) findViewById(R.id.qiuGouManage);
 	          
 
 	        
-	        //锟斤拷啥锟教拷锟斤拷椋拷锟斤拷锟阶拷锟斤拷锟斤拷  
 	    
 	        ArrayList<HashMap<String, Object>> dingDanList = new ArrayList<HashMap<String, Object>>(); 
 	       
 	        HashMap<String, Object> map1 = new HashMap<String, Object>();  
 	        map1.put("ItemImage", R.drawable.add);
 	        map1.put("ItemTitle", "锟斤拷锟节筹拷锟斤拷");
+
 	        dingDanList.add(map1); 
 	        
 	        HashMap<String, Object> map2 = new HashMap<String, Object>();
 	        map2.put("ItemImage", R.drawable.add); 
 	        map2.put("ItemTitle", "锟斤拷锟斤拷沙锟斤拷锟�");
+
 	        dingDanList.add(map2);
 	         
 	        HashMap<String, Object> map3 = new HashMap<String, Object>();
 	        map3.put("ItemImage", R.drawable.add);  
 	        map3.put("ItemTitle", "锟斤拷锟斤拷锟�");
-	        dingDanList.add(map3);
+
 	         
 	        HashMap<String, Object> map4 = new HashMap<String, Object>();
 	        map4.put("ItemImage", R.drawable.add);  
 	        map4.put("ItemTitle", "锟斤拷锟铰硷拷");
 	        dingDanList.add(map4);                  //锟斤拷锟斤拷锟斤拷锟斤拷ListView锟斤拷锟斤拷
+
 	         
 	         ArrayList<HashMap<String, Object>> qiuGouList = new ArrayList<HashMap<String, Object>>(); 
 	         
 	         HashMap<String, Object> map5 = new HashMap<String, Object>();
 	         map5.put("ItemImage", R.drawable.add);  
 	         map5.put("ItemTitle", "锟斤拷锟斤拷锟斤拷");
+
 	         qiuGouList.add(map5); 
 	         
 	         HashMap<String, Object> map6 = new HashMap<String, Object>();
@@ -146,6 +149,7 @@ public class InfoDetailActivity extends Activity {
 	                //ListItem锟斤拷XML锟侥硷拷锟斤拷锟斤拷锟斤拷锟斤拷锟絋extView ID  
 	                new int[] {R.id.ItemImage,R.id.ItemTitle});  
 	//锟斤拷硬锟斤拷锟斤拷锟绞� 
+
 	        dingDanManage.setAdapter(dingDanSchedule); 
 	        qiuGouManage.setAdapter(qiuGouSchedule); 
 	    }

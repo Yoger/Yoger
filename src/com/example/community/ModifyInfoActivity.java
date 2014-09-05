@@ -58,6 +58,7 @@ public class ModifyInfoActivity extends Activity {
 				// TODO Auto-generated method stub
 				Intent intent=new Intent(ModifyInfoActivity.this,ChangePswAct.class);
 				startActivity(intent);
+
 				
 			}
 	    	

@@ -102,6 +102,16 @@ public class FxService extends Service
 				stopSelf();
 			}
 		});
+        mFloatSeek.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+			    Intent intent = new Intent(FxService.this,ReleaseSeekAct.class);
+			    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				startActivity(intent);
+				stopSelf();
+			}
+		});
+        
         mFloatClose=(Button)mFloatLayout.findViewById(R.id.Float_close);
         mFloatClose.setOnClickListener(new OnClickListener() {
 			

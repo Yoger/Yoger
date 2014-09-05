@@ -26,6 +26,7 @@ public class HomePageAct extends ActivityGroup  {
      private AutoCompleteTextView autoTv= null;
      private ImageView search_iv=null;
 
+
 	    ArrayAdapter<String> home_searchTypeAdapter = null; 
 	    private String[] home_searchTypeArray = new String[] {"商品","服务","用户"};
 
@@ -135,6 +136,7 @@ public class HomePageAct extends ActivityGroup  {
 		set_searchType();
 		autoTv = (AutoCompleteTextView) findViewById(R.id.autoCompleteTextView1);
 		initAutoComplete("history",autoTv);
+
 		search_iv = (ImageView) findViewById(R.id.homepage_search_button);
 		search_iv.setOnClickListener(new OnClickListener(){
 			public void onClick(View arg0) {
@@ -146,6 +148,7 @@ public class HomePageAct extends ActivityGroup  {
 			
 		});
 	
+
 	}
 	
 

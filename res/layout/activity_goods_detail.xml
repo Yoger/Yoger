@@ -267,6 +267,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/register_input"/>
             
+
              <Button
                     android:id="@+id/GoodsDetail_Button_Message"
                     android:layout_width="wrap_content"
@@ -274,6 +275,7 @@
                     android:layout_marginTop="3dp"
                     android:text="@string/sales_display_button_message"/>
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -299,6 +301,8 @@
                     android:textColor="#FFF"
                     android:textSize="36sp"/>
          </LinearLayout>
+
        </LinearLayout>
      </ScrollView>
+
  </LinearLayout>

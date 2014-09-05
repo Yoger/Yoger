@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/llLoginMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -28,18 +27,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="150dp"
         android:padding="5dp" >
-
-        <!--
-            <TextView
-            android:id="@+id/lblUser"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:text="用户名：" />
-        -->
-
         <EditText
             android:id="@+id/txtUser"
             android:layout_width="match_parent"
@@ -85,16 +72,6 @@
         android:paddingRight="5dp"
         android:paddingTop="10dp" >
 
-        <!--
-            <TextView
-            android:id="@+id/lblPwd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:text="密    码：" />
-        -->
 
         <EditText
             android:id="@+id/txtPwd"
@@ -119,48 +96,7 @@
             android:src="@drawable/pwd_1" />
     </RelativeLayout>
 
-    <!--
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_marginLeft="10dp"
-      
-        android:layout_marginRight="20dp"
-        >
-        <TextView
-            android:id="@+id/tvCode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:textSize="15sp"
-            android:textColor="#000"
-            android:text="验证码：" />
-
-        <EditText
-            android:id="@+id/txtCode"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="8dp"
-            android:layout_toRightOf="@id/tvCode"
-            android:layout_centerVertical="true"
-            android:background="@drawable/login_text_shape"
-            />
-        	
-             <ImageView
-            android:id="@+id/ivCode"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_toRightOf="@id/txtCode"
-            android:layout_centerVertical="true"
-            android:scaleType="fitXY"
-            android:contentDescription="@null"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="5dp"/>
-             
-    </RelativeLayout>
-    -->
+  
 
     <RelativeLayout
         android:layout_width="match_parent"

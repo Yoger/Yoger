@@ -23,6 +23,7 @@ import android.widget.TextView;
 
 public class MovementAct extends Activity {
     private List<Map<String, Object>> mData;
+
 	
 	private List<Map<String, Object>> getData() {
 		List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();

@@ -49,7 +49,7 @@ public class MainPageAct extends ActivityGroup {
 				
 				Intent intent = new Intent(MainPageAct.this, FxService.class);
 				startService(intent);
-				//System.out.println("1");				
+
 			}
 		});
 		messagesBox = (LinearLayout)findViewById(R.id.messages);

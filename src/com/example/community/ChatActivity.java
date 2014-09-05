@@ -47,23 +47,21 @@ public class ChatActivity extends Activity implements OnClickListener {
 	}
 	
 	
-	//娴嬭瘯鏁版嵁
-	private String[] msgArray = new String[]{" 鎴戝幓杩欎篃琛�", 
-			"瀵�", 
-			"鎴�", 
-			"灏辨槸", 
-			"涓�彞", 
-			"娴嬭瘯",
-			"鑰屽凡", 
-			"澶�"};
+	private String[] msgArray = new String[]{" 我去这也行", 
+			"对", 
+			"我", 
+			"就是", 
+			"一句", 
+			"测试",
+			"而已", 
+			"天"};
 
 	private String[]dataArray = new String[]{"2012-09-01 18:00", "2012-09-01 18:10", 
 			"2012-09-01 18:11", "2012-09-01 18:20", 
 			"2012-09-01 18:30", "2012-09-01 18:35", 
 			"2012-09-01 18:40", "2012-09-01 18:50"};
 	private final static int COUNT = 8;
-	
-	//杩欎釜鍑芥暟鐢ㄤ簬鍒濆鍖栨祴璇曟暟鎹�
+	//这个函数用于初始化测试数据
 	private void initData() {
 		
 		for(int i = 0; i < COUNT; i++) {
@@ -71,7 +69,7 @@ public class ChatActivity extends Activity implements OnClickListener {
     		entity.setDate(dataArray[i]);
     		if (i % 2 == 0)
     		{
-    			entity.setName("娴嬭瘯鍛�");
+    			entity.setName("测试员");
     			entity.setMsgType(true);
     		}else{
     			entity.setName("Shamoo");

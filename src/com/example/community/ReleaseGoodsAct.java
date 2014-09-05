@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.view.Menu;
 
 public class ReleaseGoodsAct extends Activity {
 
@@ -24,6 +25,7 @@ public class ReleaseGoodsAct extends Activity {
 				startActivity(intent);
 			}
 		});
+
 	}
 
 	@Override
