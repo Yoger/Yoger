@@ -3,23 +3,24 @@ package com.example.community;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
 
 public class NewsCountAct extends Activity {
 
 	  protected void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
+	        requestWindowFeature(Window.FEATURE_NO_TITLE);
 	        setContentView(R.layout.activity_focus);
 	   
 	      //掳贸露篓XML脰脨碌脛ListView拢卢脳梅脦陋Item碌脛脠脻脝梅  
@@ -62,6 +63,30 @@ public class NewsCountAct extends Activity {
 	                                                    new int[] {R.id.ItemImage,R.id.ItemTitle});  
 	        //脤铆录脫虏垄脟脪脧脭脢戮  
 	        focusListView.setAdapter(focusListSchedule); 
-	    }
+	    
+	        
+	        Button btnBack = (Button) findViewById(R.id.TitleBackBtn);
+
+			btnBack.setOnClickListener(new OnClickListener() {
+				public void onClick(View v) {
+					KeyEvent newEvent = new KeyEvent
+							(KeyEvent.ACTION_DOWN,
+							KeyEvent.KEYCODE_BACK);
+					onKeyDown(KeyEvent.KEYCODE_BACK, newEvent);
+				}
+			});
+		}
+		
+		public boolean onKeyDown(int keyCode, KeyEvent event) {
+			if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) 
+			{
+				// 按下的如果是BACK，同时没有重复
+				finish();
+
+				return true;
+			}
+
+			return super.onKeyDown(keyCode, event);
+		}
 
 }
