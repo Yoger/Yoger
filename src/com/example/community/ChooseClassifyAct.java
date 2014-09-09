@@ -4,25 +4,22 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import com.example.community.ClassifyAct.ItemClickListener1;
-import com.example.community.ClassifyAct.ItemClickListener2;
-import com.example.community.ClassifyAct.MyListAdapter;
-
-import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class ChooseClassifyAct extends Activity {   
     private List<String> mListData;
@@ -193,6 +190,7 @@ public class ChooseClassifyAct extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_choose_classify);
 		mListData = getListData();
 		MyListAdapter adapter = new MyListAdapter(this);
@@ -200,6 +198,28 @@ public class ChooseClassifyAct extends Activity {
 		ls.setAdapter(adapter);
 		setGridView1();
 		setGridView2();
+		Button btnBack = (Button) findViewById(R.id.TitleBackBtn);
+
+		btnBack.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				KeyEvent newEvent = new KeyEvent
+						(KeyEvent.ACTION_DOWN,
+						KeyEvent.KEYCODE_BACK);
+				onKeyDown(KeyEvent.KEYCODE_BACK, newEvent);
+			}
+		});
+	}
+	
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) 
+		{
+			// 按下的如果是BACK，同时没有重复
+			finish();
+
+			return true;
+		}
+
+		return super.onKeyDown(keyCode, event);
 	}
 
 
