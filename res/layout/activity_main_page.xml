@@ -1,8 +1,7 @@
- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
-
 
      <RelativeLayout 
     android:layout_width="match_parent"
@@ -27,61 +26,131 @@
      </RelativeLayout>
     
     <LinearLayout
-       android:id="@+id/messages"
-       android:layout_width="fill_parent"
-       android:layout_height="fill_parent"
-       android:layout_marginBottom="0dp"
-       android:layout_weight="1.25"
-       android:measureAllChildren="true"
-       android:fillViewport="true"
-       android:orientation="horizontal">
+        android:id="@+id/messages"
+        android:layout_width="fill_parent"
+        android:layout_height="540dp"
+        android:layout_marginBottom="0dp"
+        android:fillViewport="true"
+        android:measureAllChildren="true"
+        android:orientation="horizontal" >
+
      </LinearLayout>
     
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="45dp"
-        android:layout_gravity="bottom"
-        android:orientation="horizontal" >
-        <ImageView
-            android:id="@+id/bre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/home_not_selected" />
+       <LinearLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="bottom"
+		    android:layout_alignParentBottom="true"
+		    android:baselineAligned="false"
+		    android:orientation="horizontal">
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_gravity="center"
+		    android:orientation="vertical">
+		    
+		        <ImageView
+		            android:id="@+id/bre"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:src="@drawable/home_ns" />
+		
+		       <TextView
+		        android:id="@+id/mainpage_first"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_marginBottom="0dp"
+		        android:textSize="12sp"
+		        android:text="主页 " />
+		    
+		</LinearLayout>
 
-        <ImageView
-            android:id="@+id/mainpage_image_add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/add" />
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:layout_gravity="center"
+		    android:orientation="vertical">   
+		    <ImageView
+		            android:id="@+id/lunch"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:src="@drawable/money_ns" />
+		
+			    <TextView
+			        android:id="@+id/mainpage_second"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:textSize="12sp"
+			        android:text="赚钱 " />		    
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center"
+		        android:layout_weight="1"
+		    android:orientation="vertical">   
+		        <ImageView
+		            android:id="@+id/mainpage_image_add"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:paddingBottom="3dp"
+		            android:src="@drawable/add" />
+		</LinearLayout> 
+		
+		<LinearLayout 
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center"
+		        android:layout_weight="1"
+		    android:orientation="vertical">   
+		        <ImageView
+		            android:id="@+id/dinner"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:src="@drawable/classify_ns" />
+		        
+		        <TextView
+		            android:id="@+id/mainpage_third"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:paddingBottom="3dp"
+			        android:textSize="12sp"
+			        android:text="分类" />
+		    
+		</LinearLayout> 
 
-        <ImageView
-            android:id="@+id/sweet"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/mypage_not_selected" />
-
-        <ImageView
-            android:id="@+id/dinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/mainpage_image_add"
-            android:layout_marginRight="36dp"
-            android:layout_toLeftOf="@+id/sweet"
-            android:src="@drawable/classify_not_selected" />
-
-        <ImageView
-            android:id="@+id/lunch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/mainpage_image_add"
-            android:layout_marginLeft="36dp"
-            android:layout_toRightOf="@+id/bre"
-            android:src="@drawable/make_money" />
-
-    </RelativeLayout>
-	
+		<LinearLayout 
+		    android:layout_gravity="center"
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:orientation="vertical">   
+		    
+		    <ImageView
+		        android:id="@+id/sweet"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		     	android:src="@drawable/inf_ns" />		        
+		    <TextView
+		        android:id="@+id/mainpage_fourth"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:paddingBottom="3dp"
+			    android:textSize="12sp"
+			    android:text="我 " />		    
+		</LinearLayout> 		
 </LinearLayout>
+	
+</RelativeLayout>
