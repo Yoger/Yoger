@@ -96,24 +96,24 @@ public class InfoDetailActivity extends Activity {
 	       
 	        HashMap<String, Object> map1 = new HashMap<String, Object>();  
 	        map1.put("ItemImage", R.drawable.add);
-	        map1.put("ItemTitle", "锟斤拷锟节筹拷锟斤拷");
+	        map1.put("ItemTitle", "正在出售");
 
 	        dingDanList.add(map1); 
 	        
 	        HashMap<String, Object> map2 = new HashMap<String, Object>();
 	        map2.put("ItemImage", R.drawable.add); 
-	        map2.put("ItemTitle", "锟斤拷锟斤拷沙锟斤拷锟�");
+	        map2.put("ItemTitle", "已完成出售");
 
 	        dingDanList.add(map2);
 	         
 	        HashMap<String, Object> map3 = new HashMap<String, Object>();
 	        map3.put("ItemImage", R.drawable.add);  
-	        map3.put("ItemTitle", "锟斤拷锟斤拷锟�");
+	        map3.put("ItemTitle", "审核中");
 
 	         
 	        HashMap<String, Object> map4 = new HashMap<String, Object>();
 	        map4.put("ItemImage", R.drawable.add);  
-	        map4.put("ItemTitle", "锟斤拷锟铰硷拷");
+	        map4.put("ItemTitle", "已下架");
 	        dingDanList.add(map4);                  //锟斤拷锟斤拷锟斤拷锟斤拷ListView锟斤拷锟斤拷
 
 	         
@@ -121,13 +121,13 @@ public class InfoDetailActivity extends Activity {
 	         
 	         HashMap<String, Object> map5 = new HashMap<String, Object>();
 	         map5.put("ItemImage", R.drawable.add);  
-	         map5.put("ItemTitle", "锟斤拷锟斤拷锟斤拷");
+	         map5.put("ItemTitle", "正在求购");
 
 	         qiuGouList.add(map5); 
 	         
 	         HashMap<String, Object> map6 = new HashMap<String, Object>();
 	         map6.put("ItemImage", R.drawable.add);  
-	         map6.put("ItemTitle", "锟斤拷锟斤拷械锟斤拷锟�");
+	         map6.put("ItemTitle", "审核中的求购");
 	         qiuGouList.add(map6);                 //锟襟购癸拷锟斤拷ListView锟斤拷锟斤拷
 	 
 	         
